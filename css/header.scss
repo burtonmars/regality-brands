@@ -1,0 +1,22 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#brand-logo img {
+    height: 75px;
+    width: 105px;
+}
+
+#brand-title {
+    display: none;
+}
+
+#hamburger {
+    float: right;
+    cursor: pointer;
+}
