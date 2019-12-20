@@ -1,14 +1,50 @@
 .container {
     width: 100%;
     padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
 
     h1 {
         font-size: 72px;
-        text-align: center;
     }
 }
 
+/* landing */
+
 #landing-page {
-    background-image: url("../img/regal-background.png")
+    display: flex;
+    background-image: url("../img/regal-background.png");
+    background-size: cover;
+    color: #ffffff;
+    height: 70vh;
+    justify-content: space-evenly;
 }
 
+#landing-page h1 {
+    text-align: center;
+    font-size: 4.5em;
+}
+
+#landing-page h2 {
+    text-align: center;
+    color: #d4b660;
+    font-size: 4em;
+}
+
+#landing-page p {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+#landing-page button {
+    color: #ffffff;
+}
+
+/* first container */
+
+#first-container {
+    display: flex;
+    color: #462920;
+}

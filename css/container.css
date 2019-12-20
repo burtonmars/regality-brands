@@ -1,14 +1,61 @@
 .container {
   width: 100%;
   padding: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .container h1 {
   font-size: 72px;
-  text-align: center;
 }
 
+/* landing */
 #landing-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-image: url("../img/regal-background.png");
+  background-size: cover;
+  color: #ffffff;
+  height: 70vh;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#landing-page h1 {
+  text-align: center;
+  font-size: 4.5em;
+}
+
+#landing-page h2 {
+  text-align: center;
+  color: #d4b660;
+  font-size: 4em;
+}
+
+#landing-page p {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+#landing-page button {
+  color: #ffffff;
+}
+
+/* first container */
+#first-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #462920;
 }
 /*# sourceMappingURL=container.css.map */

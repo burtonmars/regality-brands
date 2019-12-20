@@ -8,9 +8,9 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 20px;
-  margin-left: 25px;
-  margin-right: 25px;
+  min-width: 100vw;
+  min-height: 10vh;
+  background: #d45555;
 }
 
 #brand-logo img {
