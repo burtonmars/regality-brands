@@ -29,6 +29,7 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  padding: 4em;
 }
 
 #landing-page h1 {
@@ -57,5 +58,33 @@
   display: -ms-flexbox;
   display: flex;
   color: #462920;
+}
+
+#first-container h3 {
+  text-align: center;
+  margin-top: 4em;
+  margin-bottom: 2em;
+  font-size: 2.2em;
+}
+
+#first-container img {
+  width: 10vw;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 6em;
+}
+
+#first-container h1 {
+  margin-left: 25px;
+}
+
+#first-container p {
+  font-size: 2.5em;
+  margin-left: 25px;
+}
+
+#first-container button {
+  margin-top: 4em;
 }
 /*# sourceMappingURL=container.css.map */

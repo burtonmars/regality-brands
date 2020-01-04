@@ -20,6 +20,7 @@
     color: #ffffff;
     height: 70vh;
     justify-content: space-evenly;
+    padding: 4em;
 }
 
 #landing-page h1 {
@@ -47,4 +48,32 @@
 #first-container {
     display: flex;
     color: #462920;
+
+    h3 {
+        text-align: center;
+        margin-top: 4em;
+        margin-bottom: 2em;
+        font-size: 2.2em;
+    }
+
+    img {
+        width: 10vw;
+        align-self: center;
+        margin-bottom: 6em;
+    }
+
+    h1 {
+        margin-left: 25px;
+    }
+    
+    p {
+        font-size: 2.5em;
+        margin-left: 25px;
+    }
+
+    button {
+        margin-top: 4em;
+    }
 }
+
+
