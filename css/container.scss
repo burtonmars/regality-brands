@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    padding: 1.5em;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,7 +20,7 @@
     color: #ffffff;
     height: 70vh;
     justify-content: space-evenly;
-    padding: 4em;
+    padding: 0;
 }
 
 #landing-page h1 {
@@ -73,6 +73,19 @@
 
     button {
         margin-top: 4em;
+    }
+}
+
+#case-studies-container {
+    display: flex;
+
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .case-study-box {
+        height: 40vh;
     }
 }
 
