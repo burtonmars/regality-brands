@@ -7,128 +7,173 @@
         <title></title>
         <meta name="author" content="Marshal Burton">
         <link rel="stylesheet" href="./css/main.css">
-        <link rel="stylesheet" href="./css/header.css">
-        <link rel="stylesheet" href="./css/container.css">
         <meta >
     </head>
 
     <body>
-        <header>
-            <div class="container" id="brand-logo">
-                <img src="img/regality-logo.png" alt="Regality Brands">
-            </div>
-            <div id="brand-title">Regality Brands</div>
-            <div id="hamburger">
-                <img src="img/hamburger.png" alt="">
-            </div>
-        </header>
-
-        <div class="container" id="landing-page">
-            <h2>Regality Brands</h2>
-            <h1>A Full Service Branding Agency</h1>
-            <p>We care about your company's image. Allow us to create meaningful,
-                unique, and intuitive experiences for your users.
-            </p>
-            <button class="cta-main">Case Studies</button>
+        <main>
+        <div class="top-nav">
+            <img id="brand-logo" src="img/regality-logo.png" alt="Regality Brands">
+            <div id="title">Regality Brands</div>
+            <img id="hamburger" src="img/hamburger.png" alt="menu">
         </div>
 
-        <div class="container" id="first-container">
-            <h3>Award winning designs</h3>
-            <img src="img/scroll-icon.png" alt="">
-            <h1>We Can Help You Stand Out</h1>
-            <div class="separator-line"></div>
-            <p>Our designers create custom desings from scratch catered to
-                your identity and purpose. Our market reserachers are always finding new
-                ways to make your brand stand above the rest.
-            </p>
-            <button class="cta-main">Request Consultation</button>
-        </div>
-        <div class="container"></div>
-
-        <div class="container" id="case-studies-container">
-            <h1>Case Studies</h1>
+        <section class="home">
             <div class="container">
-                <div class="case-study-box">
-                    <h1>Skyline Resort</h1>
-                    <button class="cta-main">
-                        View Case Study
-                    </button>
-                </div>
-                <div class="case-study-box">
-                    <h1>Oasis</h1>
-                    <button class="cta-main">
-                        View Case Study
-                    </button>
-                </div>
-                <div class="case-study-box">
-                    <button class="cta-main">
-                        View Case Study
-                    </button>
+                <h2>Regality Brands</h2>
+                <h1>A Full Service Branding Agency</h1>
+                <div>
+                    <div class="left-container">
+                        <p>We care about your company's image. Allow us to create meaningful, unique, and
+                            intuitive experiences for your users.
+                        </p>
+                        <button class="btn-dark">Case Studies</button>
+                    </div>
+                    <div class="right-container"> 
+                        <div class="home-img"></div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="container">
-            <h1>Work With Us</h1>
-            <div class="separator-line"></div>
-            <p>Let us know if you're interested in talking with on of our designers.
-                We can help paint a picture of what it might look like for us to 
-                start a project together.
-            </p>
-            <p>Don;t worry, there is no commitment. We'd lvoe to hear from anyone
-                who wants to learn more.
-            </p>
+        <section class="we-can-help">
             <div class="container">
-                <h1>Request a Consultation</h1>
-                <form action="input">
-                    <input type="text" name="business-name" id="your-business-name" placeholder="your business name">
-                    <input type="text" name="name" id="your-name" placeholder="your name">
-                    <div class="container" id="work-with-us-checkboxes">
-                        <div class="container" id="right-checkboxes">
-                            <input type="checkbox" name="digital marketing" >Digital Marketing<br>
-                            <input type="checkbox" name="identity" >Brand Identity<br>
-                            <input type="checkbox" name="web" >Web Development<br>
+                <div class="container-in">
+                    <div class="left-container">
+                        <h2 id="award-winning">Award winning designs</h2>
+                    </div>
+                    <div class="right-container">
+                        <h1>We can help you stand out</h1>
+                        <p class="hr1"></p>
+                        <p class="text">Our designers create custom designs from scratch catered to your identity and purpose. Our market researchers are innovators and are always finding new ways to make your brand stand above the rest.</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="btn-light">Request Consultation</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-studies">
+            <div class="container">
+                <h1>Case Studies</h1>
+                <div class="cards">
+                    <div class="card" id="skyline-card">
+                    </div>
+                    <div class="card" id="oasis-card">
+                    </div>
+                    <div class="card" id="old-man-card">
+                    </div>
+                    <div class="card" id="jdc-card">
+                    </div>
+                    <div class="card" id="traffix-card">
+                    </div>
+                    <div class="card" id="waves-card">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <div class="desc">
+                    <h1>Work with us</h1>
+                    <p class="hr1"></p>
+                    <p class="text">
+                        Let us know if you're interested in talking with one of our designers. We can help paint a picture of what it might look like for us to start a project together.
+                    </p>
+                    <p class="text">
+                        Don't worry, there is no commitment. We'd love to hear from anyone who wants to learn more. 
+                    </p>
+                </div>
+                <div class="req-form">
+                    <h2>Request a consultation</h2>
+                    <form action="submit">
+                        <div class="co-name">
+                            <label for="co-name">Company Name</label>
+                            <input id="co-name" type="text" placeholder="your company name">
                         </div>
-                        <div class="container" id="right-checkboxes">
-                            <input type="checkbox" name="" >eCommerce<br>
-                            <input type="checkbox" name="" >Social Media<br>
-                            <input type="checkbox" name="" >Film Production<br>
+                        <div class="name">
+                            <label for="name">Your Name</label>
+                            <input id="name" type="text" placeholder="your name">
+                        </div>
+                        <label for="help-with-checkboxes">What can we help you with?</label>
+                        <div class="help-with-checkboxes">
+                            <div class="left-checks">
+                                <div>
+                                    <input id="digital-marketing" type="checkbox" value="digital-marketing">
+                                    <label for="digital-marketing">Digital Marketing</label>
+                                </div>
+                                <div>
+                                    <input id="brand-identity" type="checkbox" value="brand-identity">
+                                    <label for="brand-identity">Brand Identity</label></div>
+                                <div>
+                                    <input id="web" type="checkbox" value="web">
+                                    <label for="web">Web</label>
+                                </div>
+                            </div>
+                            <div class="right-checks">
+                                <div>              
+                                    <input id="eCommerce" type="checkbox" value="ecommerce">
+                                    <label for="eCommerce">eCommerce</label>
+                                </div>
+                                <div>
+                                    <input id="social-media" type="checkbox" value="social-media">
+                                    <label for="social-media">Social Media</label></div>
+                                <div>
+                                    <input id="film-production" type="checkbox" value="film-production">
+                                    <label for="film-production">Film Production</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="spend-drop">
+
+                        </div>
+                        <div class="email">
+                            <label for="email">Email Address</label>
+                            <input type="email" placeholder="email address">
+                        </div>
+                        <div class="btn-cont">
+                            <button class="btn-light" type="submit">Send Request</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="what-we-do">
+            <div class="container">
+                <h2>What we can do for you</h1>
+                <li>Brand/Identity Creation</li>
+                <li>Digital Marketing</li>
+                <li>Web Design and Development</li>
+                <li>eCommerce</li>
+                <li>Social Media Pressence</li>
+                <li>Film Production</li>
+            </div>
+        </section>
+
+        <section class="news-letter">
+            <div class="container">
+                <h1>Keep in touch</h1>
+                <p>We work with some of the most exciting new companies in Vancouver. Sign up for our news letter and we'll keep you updated with our new work so you can see innovation in real time. </p>
+                <form action="submit">
+                    <div>
+                        <label for="email">Email Address</label>
+                        <input type="email" placeholder="email address">
+                        <div class="btn-div">
+                            <button class="btn-light" type="submit">Keep me informed</button>
                         </div>
                     </div>
-                    <select placeholder="How much would you like to spend?">
-                        <option value="2500-5000">$2,500-5,000</option>
-                        <option value="5000-10000">$5,000-10,000</option>
-                        <option value="10000-20000">$10,000-20,000</option>
-                        <option value=">15000">$20,000+</option>
-                    </select>
-                    <input type="email" name="email" id="your-email-2" placeholder="email adress">
-                    <button type="submit" class="cta-main">Send Request</button>
                 </form>
             </div>
-        </div>
+        </section>
 
-        <div class="container">
-            <h1>What We Do For You</h1>
-            <h3>Brand/Identity Creation</h3>
-            <h3>Digital Marketing</h3>
-            <h3>Web Design and Development</h3>
-            <h3>eCommerce Experience</h3>
-            <h3>Social Media Presence</h3>
-            <h3>Fiml Production</h3>
-        </div>
-
-        <div class="container">
-            <h1>Keep In Touch</h1>
-            <p>We work with come of the most exciting new companies in Vancouver. 
-                Sign up for our news letter and we'll keep you updated with our new 
-                work so you can see innovation in real time.
-            </p>
-            <input type="email" name="email" id="your-email" placeholder="email adress">
-            <button type="submit" class="cta-main">Keep Me Informed</button>
-        </div>
+     
         <footer>
             <p>&copy; 2019</p>
         </footer>
+    </main>
     </body>
 
 </html>

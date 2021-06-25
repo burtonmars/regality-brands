@@ -1,33 +1,931 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap");
 body, html {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
   margin: 0;
   padding: 0;
-  font-size: 18px;
-  height: 100vh;
-  width: 100vw;
+  font-size: 28px;
+  height: auto;
+  width: auto;
 }
 
 body a, html a {
   text-decoration: none;
 }
 
-.cta-main {
-  height: 3em;
-  width: 10em;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  border: 5px solid;
-  border-color: #d4b660;
+button {
+  width: 55vw;
+  height: 5rem;
   background: none;
-  font-size: 2.75em;
+  border: solid;
+  border-color: #d4b660;
+  border-width: 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5em;
+  letter-spacing: .5px;
+  cursor: pointer;
 }
 
-.separator-line {
-  height: 1em;
-  width: 28vw;
-  margin-left: 25px;
-  background: #d4b660;
+.btn-dark {
+  color: white;
+}
+
+.btn-light {
+  color: #462920;
+}
+
+.top-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 2.3em;
+  padding-right: 2.3em;
+  height: 12vh;
+}
+
+.top-nav #brand-logo {
+  width: 20vw;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.top-nav #hamburger {
+  width: 10vw;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.top-nav #title {
+  font-size: 1.2rem;
+  color: #462920;
+  visibility: hidden;
+}
+
+.home {
+  background-image: url("../img/regal-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5em 2.3em 5em 2.3em;
+}
+
+.home h2 {
+  font-size: 2.5em;
+  color: #d4b660;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.home h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 3.5em;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.home .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home .container .left-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home .container p {
+  color: white;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.we-can-help {
+  margin-top: 14em;
+}
+
+.we-can-help h1 {
+  text-transform: uppercase;
+  color: #462920;
+  font-size: 3.5em;
+  margin-bottom: -10px;
+}
+
+.we-can-help h2 {
+  visibility: hidden;
+  color: #462920;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.we-can-help .hr1 {
+  border-top: 10px solid #d4b660;
+  width: 40vw;
+  border-radius: 5px;
+}
+
+.we-can-help .container {
+  padding-left: 2.3em;
+  padding-right: 2.3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.we-can-help .container .right-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.we-can-help .container .text {
+  padding-top: 2em;
+  padding-bottom: 3em;
+}
+
+.we-can-help .container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.case-studies {
+  margin-top: 14em;
+}
+
+.case-studies .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.case-studies .container h1 {
+  font-size: 3.5em;
+  text-transform: uppercase;
+  color: #462920;
+}
+
+.case-studies .container .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.case-studies .container .cards .card {
+  padding: 2.5em;
+  margin-top: 4em;
+  width: auto;
+  height: 40vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.case-studies .container .cards #skyline-card {
+  background-image: url("../img/skyline-proj.png");
+}
+
+.case-studies .container .cards #oasis-card {
+  background-image: url("../img/oasis-proj.png");
+}
+
+.case-studies .container .cards #old-man-card {
+  background-image: url("../img/old-man-sea-proj.png");
+}
+
+.case-studies .container .cards #jdc-card {
+  background-image: url("../img/jdc-inc.png");
+}
+
+.case-studies .container .cards #traffix-card {
+  background-image: url("../img/traffix-proj.png");
+}
+
+.case-studies .container .cards #waves-card {
+  background-image: url("../img/waves-proj.png");
+}
+
+.contact {
+  margin-top: 14em;
+}
+
+.contact .container {
+  padding-left: 2.3em;
+  padding-right: 2.3em;
+}
+
+.contact .container h1 {
+  text-transform: uppercase;
+  font-size: 3.5em;
+  color: #462920;
+  margin-bottom: -10px;
+}
+
+.contact .container .hr1 {
+  border-top: 10px solid #d4b660;
+  width: 40vw;
+  border-radius: 5px;
+  margin-bottom: 3rem;
+}
+
+.contact .container .desc {
+  margin-bottom: 2.5em;
+}
+
+.contact .container .req-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .container .req-form h2 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+  color: #462920;
+}
+
+.contact .container .req-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100% div;
+  width-width: 100%;
+}
+
+.contact .container .req-form label {
+  font-size: 1.8rem;
+}
+
+.contact .container .req-form input[type=text], .contact .container .req-form input[type=email] {
+  height: 2.5rem;
+  width: 75vw;
+  margin-top: 1em;
+  margin-bottom: 3em;
+  padding-left: .5em;
+  margin-left: .5em;
+  font-size: 1.2rem;
+}
+
+.contact .container .req-form input[type=text]::-webkit-input-placeholder, .contact .container .req-form input[type=email]::-webkit-input-placeholder {
+  color: #afafaf;
+  font-size: 1.2rem;
+}
+
+.contact .container .req-form label[for=help-with-checkboxes] {
+  margin-bottom: 2em;
+}
+
+.contact .container .req-form .help-with-checkboxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 3em;
+  width: 100%;
+}
+
+.contact .container .req-form .help-with-checkboxes input[type=checkbox] {
+  -webkit-transform: scale(2.5);
+          transform: scale(2.5);
+}
+
+.contact .container .req-form .help-with-checkboxes .left-checks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 15vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact .container .req-form .help-with-checkboxes .left-checks input {
+  margin-right: 1rem;
+}
+
+.contact .container .req-form .help-with-checkboxes .right-checks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 15vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact .container .req-form .help-with-checkboxes .right-checks input {
+  margin-right: 1rem;
+}
+
+.contact .container .req-form .btn-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2em;
+}
+
+.what-we-do {
+  margin-top: 14em;
+  background-image: url("../img/regal-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.what-we-do .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 8em 2.3em 8em 2.3em;
+}
+
+.what-we-do h2 {
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.3em;
+}
+
+.what-we-do li {
+  color: white;
+  letter-spacing: 1px;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.news-letter {
+  margin-top: 14em;
+}
+
+.news-letter .container {
+  padding: 1em 2.3em 1em 2.3em;
+}
+
+.news-letter h1 {
+  text-transform: uppercase;
+  color: #462920;
+  font-size: 3.5em;
+}
+
+.news-letter p {
+  color: #462920;
+  padding-bottom: 1em;
+}
+
+.news-letter form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.news-letter form div input {
+  height: 2.5rem;
+  width: 75vw;
+  margin-top: 1em;
+  margin-bottom: 3em;
+  padding-left: .5em;
+  margin-left: .5em;
+  font-size: 1.2rem;
+}
+
+.news-letter form div input[type=email]::-webkit-input-placeholder {
+  color: #afafaf;
+}
+
+.news-letter form div .btn-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2em;
+}
+
+footer {
+  margin-top: 14em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #666666;
+  height: 20vh;
+}
+
+@media (min-width: 450px) {
+  button {
+    width: 11rem;
+    height: 3rem;
+    border-width: 5px;
+    font-size: .8em;
+  }
+  .top-nav #brand-logo {
+    width: 9.4vw;
+  }
+  .top-nav #hamburger {
+    width: 4.3vw;
+  }
+  .top-nav #title {
+    visibility: visible;
+  }
+  .home {
+    padding-top: 0;
+  }
+  .home h2 {
+    visibility: hidden;
+  }
+  .home h1 {
+    margin-top: -1rem;
+    color: #d4b660;
+    font-size: 2.1em;
+  }
+  .we-can-help {
+    margin-top: 4em;
+  }
+  .we-can-help h1 {
+    font-size: 2.1em;
+    margin-bottom: -10px;
+  }
+  .we-can-help h2 {
+    visibility: visible;
+    font-size: 1.4em;
+  }
+  .we-can-help .hr1 {
+    border-top: 8px solid #d4b660;
+    width: 30vw;
+    border-radius: 5px;
+  }
+  .we-can-help .container-in {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .case-studies .container h1 {
+    font-size: 2.1em;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    color: white;
+    background-color: #462920;
+    width: 100%;
+    padding-left: 64px;
+  }
+  .case-studies .container .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .case-studies .container .cards .card {
+    padding: 2.5em;
+    margin-top: 4em;
+    width: auto;
+    height: 40vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .case-studies .container .cards #skyline-card {
+    background-image: url("../img/skyline-proj.png");
+  }
+  .case-studies .container .cards #oasis-card {
+    background-image: url("../img/oasis-proj.png");
+  }
+  .case-studies .container .cards #old-man-card {
+    background-image: url("../img/old-man-sea-proj.png");
+  }
+  .case-studies .container .cards #jdc-card {
+    background-image: url("../img/jdc-inc.png");
+  }
+  .case-studies .container .cards #traffix-card {
+    background-image: url("../img/traffix-proj.png");
+  }
+  .case-studies .container .cards #waves-card {
+    background-image: url("../img/waves-proj.png");
+  }
+  .contact {
+    margin-top: 4em;
+  }
+  .contact .container h1 {
+    font-size: 2.1em;
+  }
+  .contact .container .hr1 {
+    border-top: 8px solid #d4b660;
+    width: 30vw;
+    border-radius: 5px;
+  }
+  .contact .container .req-form h2 {
+    font-size: 1.4em;
+  }
+  .contact .container .req-form label {
+    font-size: .8rem;
+  }
+  .contact .container .req-form input[type=text], .contact .container .req-form input[type=email] {
+    height: 1.5rem;
+    font-size: 0.6rem;
+  }
+  .contact .container .req-form input[type=text]::-webkit-input-placeholder, .contact .container .req-form input[type=email]::-webkit-input-placeholder {
+    font-size: 0.6rem;
+  }
+  .contact .container .req-form label[for=help-with-checkboxes] {
+    font-size: 1em;
+    margin-bottom: 1.5em;
+  }
+  .contact .container .req-form .help-with-checkboxes {
+    width: 80%;
+  }
+  .contact .container .req-form .help-with-checkboxes input[type=checkbox] {
+    -webkit-transform: scale(2.2);
+            transform: scale(2.2);
+  }
+  .contact .container .req-form .help-with-checkboxes .left-checks input {
+    margin-right: 1rem;
+    margin-bottom: 1.5em;
+  }
+  .contact .container .req-form .help-with-checkboxes .right-checks input {
+    margin-right: 1rem;
+    margin-bottom: 1.5em;
+  }
+  .what-we-do {
+    margin-top: 4em;
+  }
+  .what-we-do .container {
+    padding: 5em 2.3em 5em 2.3em;
+  }
+  .what-we-do h2 {
+    margin-bottom: 4rem;
+    font-size: 1.5em;
+  }
+  .what-we-do li {
+    font-size: 1.4rem;
+    padding-bottom: 1.3rem;
+  }
+  .news-letter {
+    margin-top: 4em;
+  }
+  .news-letter h1 {
+    font-size: 2.1em;
+  }
+  .news-letter label {
+    font-size: .8rem;
+  }
+  .news-letter form div input {
+    height: 1.5rem;
+    font-size: 0.6rem;
+  }
+}
+
+@media (min-width: 1020px) {
+  body {
+    font-size: 22px;
+  }
+  button {
+    width: 9rem;
+    height: 2rem;
+    border-width: 3px;
+    font-size: .6em;
+  }
+  .top-nav #brand-logo {
+    width: 6vw;
+  }
+  .top-nav #hamburger {
+    width: 2.4vw;
+  }
+  .top-nav #title {
+    visibility: visible;
+    margin-left: 55vw;
+  }
+  .home {
+    padding-top: 0;
+    background: none;
+    padding: 0 10em 5em 10em;
+  }
+  .home h2 {
+    visibility: hidden;
+  }
+  .home h1 {
+    margin-top: -1rem;
+    color: #462920;
+    font-size: 1.8em;
+  }
+  .home .container p {
+    color: #462920;
+  }
+  .home .container button {
+    color: #462920;
+  }
+  .home .container div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .home .home-img {
+    height: 20rem;
+    width: 17rem;
+    background-image: url(../img/web-design-on-computer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .we-can-help {
+    margin-top: 4em;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    background-image: url(../img/regal-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .we-can-help .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 10em;
+    padding-right: 10em;
+  }
+  .we-can-help .container .container-in {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .we-can-help .container .container-in .left-container {
+    padding-right: 4rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .we-can-help h1 {
+    font-size: 1.8em;
+    color: white;
+    margin-bottom: -10px;
+  }
+  .we-can-help h2 {
+    visibility: visible;
+    color: white;
+    font-size: 1.2em;
+  }
+  .we-can-help .hr1 {
+    border-top: 8px solid #d4b660;
+    width: 30vw;
+    border-radius: 5px;
+  }
+  .we-can-help p {
+    color: white;
+  }
+  .we-can-help button {
+    color: white;
+  }
+  .case-studies .container h1 {
+    font-size: 1.8em;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    padding-left: 64.1px;
+    color: white;
+    background-color: #462920;
+    width: 100%;
+  }
+  .case-studies .container .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .case-studies .container .cards .card {
+    padding: 2.5em;
+    margin-top: 4em;
+    width: auto;
+    height: 40vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .case-studies .container .cards #skyline-card {
+    background-image: url("../img/skyline-proj.png");
+  }
+  .case-studies .container .cards #oasis-card {
+    background-image: url("../img/oasis-proj.png");
+  }
+  .case-studies .container .cards #old-man-card {
+    background-image: url("../img/old-man-sea-proj.png");
+  }
+  .case-studies .container .cards #jdc-card {
+    background-image: url("../img/jdc-inc.png");
+  }
+  .case-studies .container .cards #traffix-card {
+    background-image: url("../img/traffix-proj.png");
+  }
+  .case-studies .container .cards #waves-card {
+    background-image: url("../img/waves-proj.png");
+  }
+  .contact {
+    margin-top: 4em;
+  }
+  .contact .container h1 {
+    font-size: 1.8em;
+  }
+  .contact .container .hr1 {
+    border-top: 8px solid #d4b660;
+    width: 30vw;
+    border-radius: 5px;
+  }
+  .contact .container .req-form {
+    padding-right: 20em;
+    padding-left: 20em;
+  }
+  .contact .container .req-form h2 {
+    font-size: 1.2em;
+  }
+  .contact .container .req-form label {
+    font-size: .8rem;
+  }
+  .contact .container .req-form input[type=text], .contact .container .req-form input[type=email] {
+    height: 1rem;
+    font-size: 0.6rem;
+  }
+  .contact .container .req-form input[type=text]::-webkit-input-placeholder, .contact .container .req-form input[type=email]::-webkit-input-placeholder {
+    font-size: 0.6rem;
+  }
+  .contact .container .req-form label[for=help-with-checkboxes] {
+    font-size: 1em;
+    margin-bottom: 1.5em;
+  }
+  .contact .container .req-form .help-with-checkboxes {
+    width: 80%;
+  }
+  .contact .container .req-form .help-with-checkboxes input[type=checkbox] {
+    -webkit-transform: scale(2.2);
+            transform: scale(2.2);
+  }
+  .contact .container .req-form .help-with-checkboxes .left-checks input {
+    margin-right: 1rem;
+    margin-bottom: 1.5em;
+  }
+  .contact .container .req-form .help-with-checkboxes .right-checks input {
+    margin-right: 1rem;
+    margin-bottom: 1.5em;
+  }
+  .what-we-do {
+    margin-top: 4em;
+  }
+  .what-we-do .container {
+    padding: 5em 2.3em 5em 2.3em;
+  }
+  .what-we-do h2 {
+    margin-bottom: 4rem;
+    font-size: 1.5em;
+  }
+  .what-we-do li {
+    font-size: 1.4rem;
+    padding-bottom: 1.3rem;
+  }
+  .news-letter {
+    margin-top: 4em;
+  }
+  .news-letter h1 {
+    font-size: 1.8em;
+  }
+  .news-letter label {
+    font-size: .8rem;
+  }
+  .news-letter form div input {
+    height: 1rem;
+    font-size: 0.6rem;
+  }
+}
+
+@media (min-width: 1680px) {
+  .home {
+    padding-top: 0;
+    background: none;
+    padding: 0 20em 5em 20em;
+  }
+  .we-can-help .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 20em;
+    padding-right: 20em;
+  }
+  .case-studies .container {
+    padding-right: 20em;
+    padding-left: 20em;
+  }
+  .contact {
+    padding-left: 20em;
+    padding-right: 20em;
+  }
+  .what-we-do .container {
+    padding: 5em 20em 5em 20em;
+  }
 }
 /*# sourceMappingURL=main.css.map */
